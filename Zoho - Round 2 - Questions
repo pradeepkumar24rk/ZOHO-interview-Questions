@@ -868,3 +868,5 @@ EXPLAINATION:
     remaining screen length should be find by subtracting the screenLength - sentence.length()
     find the how many space need to add by (remainingScreenLength)/ spaceCount 
     when the addSpaceCount is odd the first space should add +1 than addSpaceValue and other place add normal.
+
+110. Find the frequence of the array without collection and inbuilt method in java.
