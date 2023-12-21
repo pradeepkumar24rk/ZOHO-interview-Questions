@@ -1,8 +1,30 @@
-1. Replace every element with the greatest element on right side
-Last Updated: 06-05-2019
-Given an array of integers, replace every element with the next greatest element (greatest element on the right side) in the array. Since there is no element next to the last element, replace it with -1. For example, if the array is {16, 17, 4, 3, 5, 2}, then it should be modified to {17, 5, 5, 5, 2, -1}.
+1. Greater on right side
+You are given an array Arr of size N. Replace every element with the next greatest element (greatest element on its right side) in the array. Also, since there is no element next to the last element, replace it with -1.
+Input:
+N = 6
+Arr[] = {16, 17, 4, 3, 5, 2}
+Output:
+17 5 5 5 2 -1
+Explanation: For 16 the greatest element 
+on its right is 17. For 17 it's 5. 
+For 4 it's 5. For 3 it's 5. For 5 it's 2. 
+For 2 it's -1(no element to its right). 
+So the answer is 17 5 5 5 2 -1
+Link: https://www.geeksforgeeks.org/problems/greater-on-right-side4305/1
 
 2. Given a Boolean matrix mat[M][N] of size M X N, modify it such that if a matrix cell mat[i][j] is 1 then make its adjacent cells as 0.
+Input:
+1 0 1
+0 1 0
+1 1 1
+Output:
+0 0 0
+0 0 0
+1 0 1
+Explanation:
+For the cell mat[0][0] which is 1, its adjacent cells (mat[0][1] and mat[1][0]) are modified to 0.
+For the cell mat[1][1] which is 1, its adjacent cells (mat[0][1], mat[1][0], mat[1][2], and mat[2][1]) are modified to 0.
+The modification is not applied to the cell mat[2][2] as it doesn't have all four adjacent cells.
 
 3. Equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes. For example, in an array A:
 Example :
@@ -88,8 +110,7 @@ Rank
 Sample Output-
 Hce akr
 Rn ak
-2.
-   Sample Input-
+
 13. Print the word with odd letters – PROGRAM
 Sample Output-
 P      P
@@ -99,10 +120,8 @@ P      P
   R  R  
  A    A 
 M      M
-14.
-Sample Input – Alternate Sorting 
 
-
+14. Sample Input – Alternate Sorting 
 Input: {1, 2, 3, 4, 5, 6, 7}
 output: {7, 1, 6, 2, 5, 3, 4}
  
@@ -125,6 +144,7 @@ output: {7, 1, 6, 2, 5, 3, 4}
 •	0 1 1 0 1
 •	Output:
 Yes
+
 17. Given an array of integers, compute the maximum value for each integer in the index, by either summing all the digits or multiplying all the digits. (Choose which operation gives the maximum value)
 •	Input:
 •	5
@@ -159,12 +179,10 @@ Output: 1 will be the safest position
         1 2 3 4 5 process 4 will be skipped
         1 2 3 4 5 process 3 will be skipped, so safest process is 1.
 
-
-.
 21. Given N. print the following snake pattern (say N = 4). condition:  must not use arrays ( 1D array  or 2D array like Matrix ).
 1   2   3   4
-8   7   6    5
-9   10  11   12
+8   7   6   5
+9   10  11  12
 16  15  14  13
  
 22. Given N. print the Latin Matrix (say N = 3). condition:  must not use strings(aka character literals), arrays (both 1D and 2D), inbuilt functions(like rotate).
@@ -208,7 +226,7 @@ Good – Three rules satisfied
 Strong – All Four rules satisfied
 
 I/P: Qw!1        O/P: Weak
-I/P: Qwertyuiop      O/P: Medium
+I/P: Qwertyuiop  O/P: Medium
 I/P: QwertY123       O/P: Good
 I/P: Qwerty@123    O/P: Strong
 
@@ -276,12 +294,12 @@ Output :
 Eg: RACE CAR
 Eg: I DID, DID I ?
 
-
 42. Given an array of integers of size n. Convert the array in such a way that if next valid number is same as current number, double its value and replace the next number with 0. After the modification, rearrange the array such that all 0’s are shifted to the end.
 Input : arr[] = {2, 2, 0, 4, 0, 8}
 Output : 4 4 8 0 0 0
 Input : arr[] = {0, 2, 2, 2, 0, 6, 6, 0, 0, 8}
 Output : 4 2 12 8 0 0 0 0 0 0
+
 43. TWISTED PRIME NUMBER
 A number is said to be twisted prime if it is a prime number and reverse of the number is also a prime number.
 Input : 97
@@ -305,7 +323,6 @@ Output : 2 (1, 4) & (2, 3)
  ***
   *
 
-
 46. Given a text and a wildcard pattern, implement wildcard pattern matching algorithm that finds if wildcard pattern is matched with text. The matching should cover the entire text (not partial text).
 The wildcard pattern can include the characters ‘?’ and ‘*’
 ‘?’ – matches any single character
@@ -317,8 +334,6 @@ output : true
 Pattern = “baaa?ab”, output : true
 Pattern = “ba*a?”, output : true
 Pattern = “a*ab”, output : false
-
-
 
 47. Given an input string and a dictionary of words, find out if the input string can be segmented into a space-separated sequence of dictionary words. See following examples for more details.
 Consider the following dictionary 
@@ -539,6 +554,7 @@ Example:
    _ 0 0 1
    _ _ _ _
    0 0 0 _
+   
 79. Insert 0 after consecutive (K times) of 1 is found.
 Example:
 Input:
@@ -659,7 +675,7 @@ Output:
 
   1 2 3 4 5 7
   
-8. Given an array of numbers. Print the numbers without duplication.
+87. Given an array of numbers. Print the numbers without duplication.
 
   INPUT  :  
   
@@ -720,6 +736,7 @@ Input : Max char per line = 10
 Output : Watching Zoho
          Eating Mango
          Loving Pogo.
+         
 93. Adding 2 numbers
 Given 2 huge numbers as separate digits, store them in array and process them and calculate the sum of 2 numbers and store the result in an array and print the sum.
 Input:
@@ -742,20 +759,21 @@ Input x = 30 n = 10
 output = 0.5
 Hint : The equation sin(x) = x – x^3 / 3! + x^5 / 5! – ….
 
-
-
 96. Write function to find multiplication of 2 numbers using +
 operator You must use minimum possible iterations.
 Input: 3 , 4
 Output 12
+
 97. Given array find maximum sum of contiguous sub array
 {-2 -3 4 -1 -2 1 5 -3}
 output 7 elements [ 4 -1 -2 1 5]
+
 98. Given unsorted array find all combination of the element for a given sum. Order should be maintained.
 Input :
 8 3 4 7 9 N=7
 Output
 {3 4 } {7}
+
 99. Given an odd length word which should be printed from the middle of the word.
 The output should be in the following pattern.
 Example:
@@ -768,7 +786,9 @@ Output:
      GRAMP
    GRAMPR
 GRAMPRO
+
 100. It is a program to implement Least Recently Used (LRU) concept. Given a key, if it is already existed then it should be marked as recently used otherwise a value should be stored which is given as input and marked as recently used. The capacity is to store only 10 key, value pairs. If the table is full and given a new key; the key, value pair which is not recently used should be deleted which gives feasibility to store the new key, value pair.
+
 101. Given a few pairs of names in the order child, father. The input is a person name and level number. The output should be the number of children in that particular level for the person given.
 Example:
 Input:
@@ -856,7 +876,7 @@ Explaination:
  then check the target value is under the sorted part of other 
  according to that change the starting and ending position.
  
- 109. INPUT:
+109. INPUT:
 Screen length = 20
 Sentence = Today is wednesda
 
