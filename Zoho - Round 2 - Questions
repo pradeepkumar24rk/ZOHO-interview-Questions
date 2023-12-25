@@ -90,7 +90,7 @@ Output: aBuzC9012
 7. Print whether the version is upgraded, downgraded or not changed according to the input given.
 example: Input : Version1 4.8.2 Version2 4.8.4 Output: upgraded, Input : Version1 4.0.2 Version2 4.8.4 Output: downgraded
 
-8. Q2. Print all possible subsets of the given array whose sum equal to given N.
+8. Print all possible subsets of the given array whose sum equal to given N.
 example: Input: {1, 2, 3, 4, 5} N=6 Output: {1, 2, 3}, {1, 5}, {2, 4}
 
 9. Reverse the words in the given String1 from the first occurrence of String2 in String1 by maintaining white Spaces.
@@ -113,13 +113,13 @@ Rn ak
 
 13. Print the word with odd letters – PROGRAM
 Sample Output-
-P      P
- R    R 
-  O  O  
-   G   
-  R  R  
- A    A 
-M      M
+P     P
+ R   R
+  O O
+   G
+  R R
+ A   A
+M     M
 
 14. Sample Input – Alternate Sorting 
 Input: {1, 2, 3, 4, 5, 6, 7}
