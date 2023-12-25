@@ -1,3 +1,5 @@
+//1.
+
 public class GreaterOnRightSide {
     static void nextGreatest(int arr[], int n) {
         int max = -1;
@@ -25,6 +27,7 @@ public class GreaterOnRightSide {
 // Input:
 // N = 6
 // Arr[] = {16, 17, 4, 3, 5, 2}
+
 // Output:
 // 17 5 5 5 2 -1
 // Explanation: For 16 the greatest element 
