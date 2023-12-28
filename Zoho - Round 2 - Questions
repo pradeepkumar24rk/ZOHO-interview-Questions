@@ -112,7 +112,7 @@ Hce akr
 Rn ak
 
 13. Print the word with odd letters – PROGRAM
-Sample Output-
+Sample Output-+4477
 P     P
  R   R
   O O
@@ -210,7 +210,7 @@ some other possibilities of 33 is (11 + 11 + 10 + 1),   (11 + 10 + 10 + 1 + 1 ),
 
 30. Pattern
 
-31. 1. Pangram Checking
+31. Pangram Checking
 Check whether all english alphabets are present in the given sentence or not
 I/P: abc defGhi JklmnOP QRStuv wxyz
 O/P: True
