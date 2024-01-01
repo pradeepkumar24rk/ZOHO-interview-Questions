@@ -1,6 +1,4 @@
-/**
- * NumericPattern
- */
+// 112. 
 public class NumericPattern {
 
     public static void main(String[] args) {
