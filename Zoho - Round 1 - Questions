@@ -19,6 +19,16 @@ int main()
     return 0;
 }
 ```
+
+**Output:**
+```
+A B C D E 
+A B C D 
+A B C 
+A B 
+A 
+```
+
 ### 2. Output of the program?
 ```c
 #include <stdio.h>
@@ -33,9 +43,15 @@ void f(char **p)
 {
     char *t;
     t = (p += sizeof(int))[-1];
-    printf("%sn", t);
+    printf("%s\n", t);
 }
 ```
+
+**Output:**
+```
+ef
+```
+
 ### 3. Output of the following program?
 ```c
 #include <stdio.h>
@@ -50,6 +66,12 @@ int main()
     return 0;
 }
 ```
+
+**Output:**
+```
+2 3 
+```
+
 ### 4. Predict the output?
 ```c
 #include <stdio.h>
@@ -67,6 +89,12 @@ void demo()
     printf("program ");
 }
 ```
+
+**Output:**
+```
+program program 
+```
+
 ### 5. Explain: What is the output of the following program?
 ```c
 #include <stdio.h>
@@ -80,21 +108,42 @@ int main()
    return 0;
 }
 ```
+
+**Output:**
+```
+n1 = 14, n2 = 9
+```
+
+**Explanation:**
+- `str1` is a null-terminated string, so its length is 14 (13 characters + 1 null terminator).
+- `str2` is an array of characters without a null terminator, so its length is 9.
+
 ### 6. Explain: Predict the Output
 ```c
 #include <stdio.h>
 int main()
 {
     char str[] = "Aptitude";
-    printf("%s %s %sn", &str[5], &5[str], str+5);
-    printf("%c %c %cn", *(str+6), str[6], 6[str]);
+    printf("%s %s %s\n", &str[5], &5[str], str+5);
+    printf("%c %c %c\n", *(str+6), str[6], 6[str]);
     return 0;
 }
 ```
+
+**Output:**
+```
+ude ude ude
+u u u
+```
+
+**Explanation:**
+- `&str[5]`, `&5[str]`, and `str+5` all point to the 6th character of `str`, which is `'u'`.
+- `*(str+6)`, `str[6]`, and `6[str]` all access the 7th character of `str`, which is `'u'`.
+
 ### 7. Explain: Predict the output of the below program
 ```c
 #include <stdio.h>
-#define SIZE(arr) sizeof(arr) / sizeof(*arr);
+#define SIZE(arr) sizeof(arr) / sizeof(*arr)
 void fun(int* arr, int n)
 {
     int i;
@@ -115,6 +164,17 @@ int main()
     return 0;
 }
 ```
+
+**Output:**
+```
+50 20 40 
+```
+
+**Explanation:**
+- `*arr` (10) is increased by the value of `*(arr + n - 1)` (30) plus 10, resulting in 50.
+- `*(arr + n - 1)` (30) is increased by 10, resulting in 40.
+- The final array is `{50, 20, 40}`.
+
 ### 8. Explain: Print the output
 ```c
 #include <stdio.h>
@@ -132,6 +192,10 @@ int main()
     return 0;
 }
 ```
+
+**Output:**
+- This code will not compile because `struct st` contains a field of its own type, which is not allowed in C. 
+
 ### 9. Explain: Identify the output of the following
 ```c
 union test
@@ -146,6 +210,15 @@ int main()
     return 0;
 }
 ```
+
+**Output:**
+```
+8
+```
+
+**Explanation:**
+- The size of the union is determined by the size of its largest member. `arr[8]` is the largest member, occupying 8 bytes.
+
 ### 10. Output of the program
 ```c
 #include <stdio.h>
@@ -160,6 +233,18 @@ int main()
     printf("%s ", cpp[-1][-1]+1);
     return 0;
 }
+```
+
+**Output:**
+```
+TEST Z ST eksQuiz
+```
+
+**Explanation:**
+- `**++cpp` points to `"TEST"`.
+- `*--*++cpp+3` points to `"Z"`.
+- `*cpp[-2]+3` points to `"ST"`.
+- `cpp[-1][-1]+1` points to `"eksQuiz"`.
 ```
 11. **Question 1:**
 ```cpp
