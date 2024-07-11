@@ -1,0 +1,18 @@
+1. Super Store
+
+  Build an online shopping interface where buyers and sellers can buy and sell inventory and engage in efficient transactions across a wide range of products.
+  
+  Modules :
+  
+  Profile service.
+  Inventory service.
+  Order service.
+  Payment service.
+  
+  Requirements :
+  
+  Allow buyers and sellers to register and log in.
+  Allow sellers to manage their inventory of products. (Operations : addItem(), updateItem())
+  Allow buyers to add items to the cart, place the order, and make payment (Operations: listInventory(), butItem(), addToCart(), makePayment ()).
+  Orders should be validated against inventory.
+  Password validation and encryption.
