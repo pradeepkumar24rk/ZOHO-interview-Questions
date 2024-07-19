@@ -962,3 +962,8 @@ Example 3:
 
 Input: num = 1234567
 Output: "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+
+116. Remove the palindrome
+Example 1:
+Input: Malayalam is my mother tongue
+Output: is my mother tongue
