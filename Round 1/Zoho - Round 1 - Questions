@@ -49,7 +49,7 @@ void f(char **p)
 
 **Output:**
 ```
-ef
+gh
 ```
 
 ### 3. Output of the following program?
