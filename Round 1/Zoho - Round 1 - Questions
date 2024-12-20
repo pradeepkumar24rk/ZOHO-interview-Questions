@@ -477,7 +477,7 @@ main()
     }
 }
 ```
-Output: `112`
+Output: `111`
 
 Explanation: `case 0` increments `i` to `1`, then falls through to `case 1` and `case 2`, printing `1`, `1`, `2` in sequence.
 
@@ -520,9 +520,9 @@ main()
         printf("value of x is not zero");
 }
 ```
-Output: `value of x is zero`
+Output: `value of x is not zero`
 
-Explanation: `if(x=0)` assigns `0` to `x`, which is `false`. Thus, `printf("value of x is zero");` gets executed.
+Explanation: `if(x=0)` assigns `0` to `x`, which is `false`. Thus, `printf("value of x is not zero");` gets executed.
 
 ### 29
 ```c
@@ -622,7 +622,7 @@ int main()
     printf("%c", 5["welcomeall"]);
 }
 ```
-Output: `a`
+Output: `m`
 
 Explanation: Equivalent to `printf("%c", "welcomeall"[5]);`.
 
