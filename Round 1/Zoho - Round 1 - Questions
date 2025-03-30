@@ -133,12 +133,12 @@ int main()
 **Output:**
 ```
 ude ude ude
-u u u
+d d d
 ```
 
 **Explanation:**
 - `&str[5]`, `&5[str]`, and `str+5` all point to the 6th character of `str`, which is `'u'`.
-- `*(str+6)`, `str[6]`, and `6[str]` all access the 7th character of `str`, which is `'u'`.
+- `*(str+6)`, `str[6]`, and `6[str]` all access the 7th character of `str`, which is `'d'`.
 
 ### 7. Explain: Predict the output of the below program
 ```c
