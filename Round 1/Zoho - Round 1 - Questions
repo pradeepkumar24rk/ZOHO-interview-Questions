@@ -543,7 +543,7 @@ main()
     }
 }
 ```
-Output: `5111721`
+Output: `1621`
 
 Explanation:
 - `i = 0`: case 0 adds 5 → `i = 5` falls through, case 1 adds 2 → `i = 7`, case 5 adds 5 → `i = 12`, default adds 4 → `i = 16` then breaks.
