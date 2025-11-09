@@ -239,3 +239,130 @@ Here's a refined version of the question based on your description:
    - In later modules of the game:
      - Each brick has a value indicating its strength. Every hit reduces the strength by 1, and the brick disappears only when its strength reaches 0.
      - The game consists of 7 modules, each adding new mechanics or rules to enhance gameplay.
+---
+## 6. Social Media Application
+
+1. **Description:**  
+   Design and implement a console-based Social Media Application that allows users to sign up, connect with friends, post updates, interact with posts, and manage notifications.  
+   The system should provide features for user management, friend suggestions, post interactions, and notifications, ensuring a smooth console-based user experience.
+
+
+2. **Modules:**
+   - User Management  
+   - Friend Suggestions  
+   - Friend Request Management  
+   - Post Management  
+   - News Feed  
+   - Notification Management  
+
+
+3. **Functional Requirements:**
+
+   1. **User Signup:**  
+      - Users can sign up by entering:
+        - Name  
+        - Date of Birth (DOB)  
+        - Age  
+        - Location  
+        - Occupation  
+      - All details are entered via the console.
+
+   2. **Friend Suggestions:**  
+      Friend suggestions are displayed in the following order:
+      - **Mutual Friends:**  
+        - Display users who share mutual friends.  
+        - Show the mutual friend count and names (if only one mutual friend).
+      - **Matching Profiles:**  
+        - Show users with matching attributes such as:
+          - Name  
+          - Age  
+          - DOB month  
+          - Location  
+        - Sort by the highest match to the lowest match.
+      - **Other Users:**  
+        - List remaining users who do not fall in the above two categories.
+
+   3. **Friend Request Management:**  
+      - Users can send friend requests to suggested users or by searching for specific users.  
+      - Display pending friend requests with requester details.  
+      - Allow users to accept or reject friend requests.  
+      - Update friendship status once a request is accepted.
+
+   4. **View Friends:**  
+      - Display the list of friends with their details:
+        - Name  
+        - Age  
+        - Location  
+        - Occupation  
+
+   5. **Create Post:**  
+      - Users can create posts that are visible to their friends.  
+      - Example Post:  
+        `"Enjoying the sunny day in New York! #blessed"`
+
+   6. **News Feed:**  
+      - Display posts from the user’s friends including:
+        - Post content  
+        - Author  
+        - Like count  
+        - Comments  
+      - New posts appear at the top of the feed.
+
+   7. **Interact with Posts:**  
+      - Users can like or comment on posts.  
+      - Each post shows updated like counts and comments in the feed.
+
+   8. **Share Post:**  
+      - Each post includes a share option.  
+      - Shared posts appear in the recipient’s notifications.  
+      - Recipients can view, like, comment, and share the post again.
+
+   9. **Notification Management:**  
+      - Notifications are generated for:
+        - Friend requests  
+        - Accepted requests  
+        - Shared posts  
+        - Post interactions  
+      - Notifications are cleared when viewed or acted upon.
+
+
+4. **Example Scenarios:**
+
+   1. **User Registration:**  
+      | User | Name | Age | Location | Occupation |
+      |------|------|-----|-----------|-------------|
+      | A | Alice | 25 | New York | Engineer |
+      | B | Bob | 25 | San Francisco | Designer |
+
+   2. **Friend Suggestions:**  
+      - User A sees:  
+        - Users with mutual friends  
+        - Matching profiles (same age or location)  
+        - Other users  
+
+   3. **Sending Friend Requests:**  
+      - User A sends a friend request to User B.  
+      - User B receives a notification:  
+        `"Alice sent you a friend request."`
+
+   4. **Accepting Friend Requests:**  
+      - User B views and accepts the request.  
+      - The system updates their friendship status.  
+      - Both users now appear in each other’s friend lists.
+
+   5. **Creating Posts:**  
+      - User A creates a post:  
+        `"Enjoying the sunny day in New York! #blessed"`
+
+   6. **News Feed and Interactions:**  
+      - User B’s feed shows Alice’s post.  
+      - User B likes and comments: `"Looks amazing!"`  
+      - User A shares the post with User C.
+
+   7. **Notifications:**  
+      - User C receives a shared post notification.  
+      - User C can like, comment, or share the post again.
+     
+   8. **Sample Solution (up to Friend Request Management):**  
+          [View Solution on Google Drive](https://drive.google.com/file/d/1dq7xnCsSVVWraqWQkU2bWgaKm9tLW2Kk/view)
+----
