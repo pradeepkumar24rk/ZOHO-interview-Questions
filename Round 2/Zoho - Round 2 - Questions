@@ -999,3 +999,92 @@ Output: 0
 Explanation:
 
 Ignoring leading zeroes, both "01" and "001" represent the same integer "1".
+
+118. Print the below output for a given n
+
+Example; n = 7
+
+4444444
+4333334
+4322234
+4321234
+4322234
+4333334
+4444444
+
+n = 9
+
+555555555
+544444445
+543333345
+543222345
+543212345
+543222345
+543333345
+544444445
+555555555
+
+119. You are given an array prices where prices[i] is the price of a given stock on the ith day.
+     You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+     Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+Example 1:
+
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+
+Example 2:
+
+Input: prices = [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transactions are done and the max profit = 0.
+
+120. Given an array of integers of length n. Our task is to return the max element 
+     if the it is at least twice as much as every other number in the array. 
+     If the max element does not satisfy the condition return -1.
+
+Input : arr = {3, 6, 1, 0}
+Output : 1
+Here, 6 is the largest integer, and for 
+every other number in the array x, 6 is 
+more than twice as big as x. The value is 6
+so we return 6.
+
+Input :   arr = {1, 2, 3, 4}
+Output : -1
+4 isn't at least as big as twice the value
+of 3, so we return -1.
+
+121. Convert a non-negative integer num to its English words representation.
+
+Example 1:
+
+Input: num = 123
+Output: "One Hundred Twenty Three"
+Example 2:
+
+Input: num = 12345
+Output: "Twelve Thousand Three Hundred Forty Five"
+Example 3:
+
+Input: num = 1234567
+Output: "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+
+122. Given an array arr[] containing only 0s and 1s, find the longest subarray which contains equal no of 0s and 1s. return their start and end indexes
+
+Examples: 
+
+Input: arr[] = [1, 0, 1, 1, 1, 0, 0]
+Output: 1 , 6
+Explanation: arr[1 ... 6] is the longest subarray with three 0s and three 1s.
+
+Input: arr[] = [0, 0, 1, 1, 0]
+Output: 0 , 3 ( 1 , 3 is also valid )
+Explanation: arr[0 ... 3] or  arr[1 ... 4] is the longest subarray with two 0s and two 1s.
+
+Input: arr[] = [0]
+Output: No Sub array found
+Explanation: There is no subarray with an equal number of 0s and 1s.
+ 
